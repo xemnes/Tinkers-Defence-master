@@ -1,0 +1,17 @@
+[
+  {
+    "name": "roundshield",
+    "type": "tool",
+    "data": "tool/roundshield.json"
+  },
+  {
+    "name": "kiteshield",
+    "type": "tool",
+    "data": "tool/kiteshield.json"
+  },
+  {
+    "name": "ring",
+    "type": "tool",
+    "data": "tool/ring.json"
+  }
+]

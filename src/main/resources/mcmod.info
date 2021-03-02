@@ -1,0 +1,14 @@
+[
+{
+ "modid": "tinkersdefence",
+ "name": "Tinkers' Defence",
+ "description": "A stripped fork of Tinkers Compendium. A Tinkers Construct addon that adds new armor and shields.",
+ "version": "1.5.4",
+ "mcversion": "1.12.2",
+ "url": "",
+ "authorList": ["Lance5057","Xemnes"],
+ "requiredMods": [ "forge", "tconstruct","baubles","conarm"],
+ "dependencies": ["tconstruct","baubles","conarm"],
+ "useDependencyInformation": "true"
+}
+]

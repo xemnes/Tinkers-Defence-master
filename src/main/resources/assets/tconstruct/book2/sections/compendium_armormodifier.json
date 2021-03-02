@@ -1,0 +1,22 @@
+[
+  {
+    "type": "modifier",
+    "data": "armormodifier/deadmansswitch.json"
+  },
+  {
+    "type": "modifier",
+    "data": "armormodifier/protection.json"
+  },
+  {
+    "type": "modifier",
+    "data": "armormodifier/fireprotection.json"
+  },
+  {
+    "type": "modifier",
+    "data": "armormodifier/projprotection.json"
+  },
+  {
+    "type": "modifier",
+    "data": "armormodifier/blastprotection.json"
+  }
+]

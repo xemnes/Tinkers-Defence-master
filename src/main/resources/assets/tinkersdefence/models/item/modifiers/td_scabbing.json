@@ -1,0 +1,31 @@
+{
+    "textures": {
+        "arrow": "tinkersdefence:items/arrow/mod_scabbing",
+        "battleaxe": "tinkersdefence:items/battleaxe/mod_scabbing",
+        "battlesign": "tinkersdefence:items/battlesign/mod_scabbing",
+        "bolt": "tinkersdefence:items/bolt/mod_scabbing",
+        "broadsword": "tinkersdefence:items/broadsword/mod_scabbing",
+        "cleaver": "tinkersdefence:items/cleaver/mod_scabbing",
+        "crossbow": "tinkersdefence:items/crossbow/mod_scabbing",
+        "excavator": "tinkersdefence:items/excavator/mod_scabbing",
+        "frypan": "tinkersdefence:items/frypan/mod_scabbing",
+        "hammer": "tinkersdefence:items/hammer/mod_scabbing",
+        "hatchet": "tinkersdefence:items/hatchet/mod_scabbing",
+        "longbow": "tinkersdefence:items/longbow/mod_scabbing",
+        "longbow1": "tinkersdefence:items/longbow/mod_scabbing",
+        "longbow2": "tinkersdefence:items/longbow/mod_scabbing",
+        "longbow3": "tinkersdefence:items/longbow/mod_scabbing",
+        "longsword": "tinkersdefence:items/longsword/mod_scabbing",
+        "lumberaxe": "tinkersdefence:items/lumberaxe/mod_scabbing",
+        "mattock": "tinkersdefence:items/mattock/mod_scabbing",
+        "pickaxe": "tinkersdefence:items/pickaxe/mod_scabbing",
+        "rapier": "tinkersdefence:items/rapier/mod_scabbing",
+        "scythe": "tinkersdefence:items/scythe/mod_scabbing",
+        "shortbow": "tinkersdefence:items/shortbow/mod_scabbing",
+        "shortbow1": "tinkersdefence:items/shortbow/mod_scabbing",
+        "shortbow2": "tinkersdefence:items/shortbow/mod_scabbing",
+        "shortbow3": "tinkersdefence:items/shortbow/mod_scabbing",
+        "shovel": "tinkersdefence:items/shovel/mod_scabbing",
+        "shuriken": "tinkersdefence:items/shuriken/mod_scabbing"
+    }
+}

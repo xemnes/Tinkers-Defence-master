@@ -1,0 +1,9 @@
+{
+    "textures": {
+		"layer0": "tinkersdefence:items/armor/hauberk/_plate",
+		"layer1": "tinkersdefence:items/armor/hauberk/_chain",
+		"layer2": "tinkersdefence:items/armor/hauberk/_clasp",
+		"layer3": "tinkersdefence:items/armor/hauberk/_cloth",
+		"layer4": "tinkersdefence:items/armor/hauberk/_rivet"
+    }
+}

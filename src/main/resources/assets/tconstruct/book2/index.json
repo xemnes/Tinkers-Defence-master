@@ -1,0 +1,50 @@
+[
+  {
+    "name": "defence_intro",
+    "data": "sections/defence_intro.json",
+    "icon": {
+      "item": {
+        "id": "tinkersdefence:armorstation",
+        "damage": 0
+      }
+    }
+  },
+  {
+    "name": "defence_armor",
+    "data": "sections/defence_armor.json",
+    "icon": {
+      "item": {
+        "id": "tinkersdefence:helm",
+        "damage": 0
+      }
+    }
+  },
+  {
+    "name": "armormaterials",
+    "module": "TinkerTools",
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_ingot"
+      }
+    }
+  },
+  {
+    "name": "defence_armormodifier",
+    "data": "sections/defence_armormodifier.json",
+    "icon": {
+      "item": {
+        "id": "minecraft:redstone"
+      }
+    }
+  },
+    {
+    "name": "defence_tool",
+    "data": "sections/defence_tool.json",
+    "icon": {
+      "item": {
+        "id": "tinkersdefence:roundshield",
+        "damage": 0
+      }
+    }
+  }
+]

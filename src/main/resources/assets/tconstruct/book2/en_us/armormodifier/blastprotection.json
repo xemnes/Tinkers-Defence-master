@@ -1,0 +1,25 @@
+{
+  "modifier": "blastprotection",
+  "text": [
+    {
+      "text": "\n"
+    },
+    {
+      "text": "Mining & tnt without blast protection is just plain dangeous. A worthwile solution is wool padding."
+    }
+  ],
+  "effects": [
+    "Exploding & Saftey.",
+    "Multiple Levels."
+  ],
+  "demoTool": [
+    "tinkersdefence:helm",
+    "tinkersdefence:breastplate",
+    "tinkersdefence:grieves",
+    "tinkersdefence:sabatons",
+    "tinkersdefence:hood",
+    "tinkersdefence:shawl",
+    "tinkersdefence:robe",
+    "tinkersdefence:shoes"
+  ]
+}

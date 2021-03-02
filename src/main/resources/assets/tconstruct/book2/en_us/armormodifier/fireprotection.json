@@ -1,0 +1,22 @@
+{
+  "modifier": "fireprotection",
+  "text": [
+    {
+      "text": "Embers a blaze, this can pose great threat. \nIt was discovered that a coating of magma \ncream offers protection from the burning elements."    
+    }
+  ],
+  "effects": [
+    "Fire resistant.",
+    "Multiple Levels."
+  ],
+  "demoTool": [
+    "tinkersdefence:helm",
+    "tinkersdefence:breastplate",
+    "tinkersdefence:grieves",
+    "tinkersdefence:sabatons",
+    "tinkersdefence:hood",
+    "tinkersdefence:shawl",
+    "tinkersdefence:robe",
+    "tinkersdefence:shoes"
+  ]
+}

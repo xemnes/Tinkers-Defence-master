@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "tinkersdefence:items/_clasp",
+		"layer1": "tinkersdefence:items/plate"
+    }
+}

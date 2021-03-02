@@ -1,0 +1,23 @@
+{
+  "modifier": "protection",
+  "text": [
+    {
+      "text": "The best offence is a good defence. \nThose that align with this belief can apply \niron armor plates for some extra protection."
+    }
+  ],
+  "effects": [
+    "Protection & Values.",
+    "Not projectile proof.",
+    "Multiple Levels."
+  ],
+  "demoTool": [
+    "tinkersdefence:helm",
+    "tinkersdefence:breastplate",
+    "tinkersdefence:grieves",
+    "tinkersdefence:sabatons",
+    "tinkersdefence:hood",
+    "tinkersdefence:shawl",
+    "tinkersdefence:robe",
+    "tinkersdefence:shoes"
+  ]
+}

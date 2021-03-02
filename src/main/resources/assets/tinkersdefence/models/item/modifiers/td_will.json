@@ -1,0 +1,31 @@
+{
+    "textures": {
+        "arrow": "tinkersdefence:items/arrow/mod_will",
+        "battleaxe": "tinkersdefence:items/battleaxe/mod_will",
+        "battlesign": "tinkersdefence:items/battlesign/mod_will",
+        "bolt": "tinkersdefence:items/bolt/mod_will",
+        "broadsword": "tinkersdefence:items/broadsword/mod_will",
+        "cleaver": "tinkersdefence:items/cleaver/mod_will",
+        "crossbow": "tinkersdefence:items/crossbow/mod_will",
+        "excavator": "tinkersdefence:items/excavator/mod_will",
+        "frypan": "tinkersdefence:items/frypan/mod_will",
+        "hammer": "tinkersdefence:items/hammer/mod_will",
+        "hatchet": "tinkersdefence:items/hatchet/mod_will",
+        "longbow": "tinkersdefence:items/longbow/mod_will",
+        "longbow1": "tinkersdefence:items/longbow/mod_will",
+        "longbow2": "tinkersdefence:items/longbow/mod_will",
+        "longbow3": "tinkersdefence:items/longbow/mod_will",
+        "longsword": "tinkersdefence:items/longsword/mod_will",
+        "lumberaxe": "tinkersdefence:items/lumberaxe/mod_will",
+        "mattock": "tinkersdefence:items/mattock/mod_will",
+        "pickaxe": "tinkersdefence:items/pickaxe/mod_will",
+        "rapier": "tinkersdefence:items/rapier/mod_will",
+        "scythe": "tinkersdefence:items/scythe/mod_will",
+        "shortbow": "tinkersdefence:items/shortbow/mod_will",
+        "shortbow1": "tinkersdefence:items/shortbow/mod_will",
+        "shortbow2": "tinkersdefence:items/shortbow/mod_will",
+        "shortbow3": "tinkersdefence:items/shortbow/mod_will",
+        "shovel": "tinkersdefence:items/shovel/mod_will",
+        "shuriken": "tinkersdefence:items/shuriken/mod_will"
+    }
+}

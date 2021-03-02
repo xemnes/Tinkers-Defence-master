@@ -1,0 +1,9 @@
+{
+    "textures": {
+        "layer0": "tinkersdefence:items/armor/sabatons/_plates",
+        "layer1": "tinkersdefence:items/armor/sabatons/_trim",
+		"layer2": "tinkersdefence:items/armor/sabatons/_caps",
+		"layer3": "tinkersdefence:items/armor/sabatons/_soles",
+		"broken1": "tinkersdefence:items/armor/sabatons/_plates"
+    }
+}

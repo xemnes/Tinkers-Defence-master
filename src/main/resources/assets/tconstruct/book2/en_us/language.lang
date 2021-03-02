@@ -1,0 +1,14 @@
+// Localization Fixes For The Compendium
+defence_intro=Introduction
+defence_armor=Armors
+armormaterials=Armor Materials
+defence_armormodifier=Armor Modifiers
+defence_tool=Tools
+materials=Tool Materials
+defence_toolmodifier=Tool Modifiers
+
+material.craft_partbuilder=Must be Hand Crafted
+material.craft_casting=Smeltable & Castable
+
+modifier.effect=Modifier Effect(s)
+tool.properties=Tool Properties
