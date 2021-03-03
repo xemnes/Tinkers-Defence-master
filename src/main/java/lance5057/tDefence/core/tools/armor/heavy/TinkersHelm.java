@@ -186,6 +186,8 @@ public class TinkersHelm extends ArmorCore {
 	@Override
 	public void onUpdate(ItemStack tool, World world, Entity entity, int itemSlot, boolean isSelected)
 	{
+		super.onUpdate(tool, world, entity, itemSlot, isSelected);
+
 		if(canTick(world,5,1) && entity instanceof EntityLivingBase)
 		{
 			EntityLivingBase enlb=(EntityLivingBase)entity;
@@ -195,37 +197,17 @@ public class TinkersHelm extends ArmorCore {
 			for (ItemStack s : enlb.getArmorInventoryList()) {
 				if (s != null && !s.isEmpty() && !head.isEmpty() && head.getItem() instanceof TinkersHelm) {
 					boolean found = false;
+					Item handItem = hand.getItem();
 					for (String itemName : TinkersDefence.config.armor.visorItemWhitelist) {
-						if (hand.getItem().getRegistryName().toString().equals(itemName)) {
-							ArmorTagUtil.setVisor(s, true);
-							ArmorTagUtil.setVisorTime(s, 0.0f);
-							s.serializeNBT();
-							found = true;
-							break;
-						}
-						else if (hand.getItem() instanceof ItemSword) {
-							ArmorTagUtil.setVisor(s, true);
-							ArmorTagUtil.setVisorTime(s, 0.0f);
-							s.serializeNBT();
-							found = true;
-						}
-						else if (hand.getItem() instanceof ItemAxe) {
-							ArmorTagUtil.setVisor(s, true);
-							ArmorTagUtil.setVisorTime(s, 0.0f);
-							s.serializeNBT();
-							found = true;
-						}
-						else if (hand.getItem() instanceof ItemBow) {
-							ArmorTagUtil.setVisor(s, true);
-							ArmorTagUtil.setVisorTime(s, 0.0f);
-							s.serializeNBT();
-							found = true;
-						}
-						else if (enlb.isActiveItemStackBlocking()) {
-							ArmorTagUtil.setVisor(s, true);
-							ArmorTagUtil.setVisorTime(s, 0.0f);
-							s.serializeNBT();
-							found = true;
+						if (handItem.getRegistryName().toString().equals(itemName) ||
+							handItem instanceof ItemSword ||
+							handItem instanceof ItemAxe ||
+							handItem instanceof ItemBow ||
+							enlb.isActiveItemStackBlocking()) {
+								ArmorTagUtil.setVisor(s, true);
+								ArmorTagUtil.setVisorTime(s, 0.0f);
+								s.serializeNBT();
+								found = true;
 						}
 					}
 					if (!found) {
