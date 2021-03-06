@@ -34,7 +34,7 @@ public class ModelTinkersHelm extends ArmorRenderer {
         
         this.Helm = new ModelRenderer(this, 26, 4);
         this.Helm.setRotationPoint(0.0F, 0.0F, 0.0F);
-        this.Helm.addBox(-4.0F, -8.0F, -4.0F, 8, 8, 8, 0.5F);
+        this.Helm.addBox(-4.0F, -8.0F, -4.0F, 8, 8, 8, 0.51F);
         
         this.MouthGuard = new ModelRenderer(this, 30, 20);
         this.MouthGuard.setRotationPoint(0.0F, -2.0F, 0.0F);

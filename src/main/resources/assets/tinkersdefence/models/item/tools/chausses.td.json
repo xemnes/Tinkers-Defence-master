@@ -1,9 +1,9 @@
 {
     "textures": {
         "layer0": "tinkersdefence:items/armor/chausses/_chain",
-		"layer0": "tinkersdefence:items/armor/chausses/_plate",
-        "layer1": "tinkersdefence:items/armor/chausses/_clasp",
-		"layer2": "tinkersdefence:items/armor/chausses/_cloth",
-		"broken1": "tinkersdefence:items/armor/chausses/_chain"
+		"layer1": "tinkersdefence:items/armor/chausses/_plate",
+        "layer2": "tinkersdefence:items/armor/chausses/_clasp",
+		"layer3": "tinkersdefence:items/armor/chausses/_cloth",
+		"broken1": "tinkersdefence:items/armor/chausses/_clasp"
     }
 }

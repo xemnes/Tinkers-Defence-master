@@ -145,7 +145,8 @@ dependencies {
 	compile files("E:/.minecraft/realmofstorms/source files/ConstructsArmory-master/build/libs/conarm-1.12.2-1.2.5.9.jar")
 	compile files("E:/.minecraft/realmofstorms/source files/MoarTinkers-master/build/libs/moartinkers-0.6.0.jar")
 
-	deobfCompile "curse.maven:ebwizardry-265642:2886605"
+	deobfCompile "curse.maven:ebwizardry-265642:3189062"
+	//deobfCompile "curse.maven:ebwizardry-265642:2886605"
 
 	deobfCompile "curse.maven:redstoneflux-270789:2920436"
 	deobfCompile "curse.maven:cofhcore-69162:2920433"

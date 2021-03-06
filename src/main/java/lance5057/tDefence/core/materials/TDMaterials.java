@@ -80,137 +80,33 @@ public class TDMaterials {
 
 	// Wool Colors
 
-	public static MaterialHelper black;
-	public static MaterialHelper red;
-	public static MaterialHelper green;
-	public static MaterialHelper brown;
-	public static MaterialHelper blue;
-	public static MaterialHelper purple;
-	public static MaterialHelper cyan;
-	public static MaterialHelper lightgray;
-	public static MaterialHelper gray;
-	public static MaterialHelper pink;
-	public static MaterialHelper lime;
-	public static MaterialHelper yellow;
-	public static MaterialHelper lightblue;
-	public static MaterialHelper magenta;
-	public static MaterialHelper orange;
 	public static MaterialHelper white;
+	public static MaterialHelper orange;
+	public static MaterialHelper magenta;
+	public static MaterialHelper lightblue;
+	public static MaterialHelper yellow;
+	public static MaterialHelper lime;
+	public static MaterialHelper pink;
+	public static MaterialHelper gray;
+	public static MaterialHelper lightgray;
+	public static MaterialHelper cyan;
+	public static MaterialHelper purple;
+	public static MaterialHelper blue;
+	public static MaterialHelper brown;
+	public static MaterialHelper green;
+	public static MaterialHelper red;
+	public static MaterialHelper black;
 
 	@Subscribe
 	public void preInit(FMLPreInitializationEvent event) {
 
 		if (TDConfig.materials.cloth) {
-			if (TinkerRegistry.getMaterial("blackcloth") == Material.UNKNOWN && TDConfig.materials.black) {
-				black = new MaterialHelper("blackcloth", 0x191616);
-				black.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+			if (TinkerRegistry.getMaterial("whitecloth") == Material.UNKNOWN && TDConfig.materials.white) {
+				white = new MaterialHelper("whitecloth", 0xDDDDDD);
+				white.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
 						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 15)));
-				materials.add(black);
-			}
-
-			if (TinkerRegistry.getMaterial("redcloth") == Material.UNKNOWN && TDConfig.materials.red) {
-				red = new MaterialHelper("redcloth", 0x963430);
-				red.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 14)));
-				materials.add(red);
-			}
-
-			if (TinkerRegistry.getMaterial("greencloth") == Material.UNKNOWN && TDConfig.materials.green) {
-				green = new MaterialHelper("greencloth", 0x35461B);
-				green.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 13)));
-				materials.add(green);
-			}
-
-			if (TinkerRegistry.getMaterial("browncloth") == Material.UNKNOWN && TDConfig.materials.brown) {
-				brown = new MaterialHelper("browncloth", 0x4F321F);
-				brown.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 12)));
-				materials.add(brown);
-			}
-
-			if (TinkerRegistry.getMaterial("bluecloth") == Material.UNKNOWN && TDConfig.materials.blue) {
-				blue = new MaterialHelper("bluecloth", 0x2E388D);
-				blue.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 11)));
-				materials.add(blue);
-			}
-
-			if (TinkerRegistry.getMaterial("purplecloth") == Material.UNKNOWN && TDConfig.materials.purple) {
-				purple = new MaterialHelper("purplecloth", 0x7E3DB5);
-				purple.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 10)));
-				materials.add(purple);
-			}
-
-			if (TinkerRegistry.getMaterial("cyancloth") == Material.UNKNOWN && TDConfig.materials.cyan) {
-				cyan = new MaterialHelper("cyancloth", 0x2E6E89);
-				cyan.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 9)));
-				materials.add(cyan);
-			}
-
-			if (TinkerRegistry.getMaterial("lightgraycloth") == Material.UNKNOWN && TDConfig.materials.lightgray) {
-				lightgray = new MaterialHelper("lightgraycloth", 0x9AA1A1);
-				lightgray.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 8)));
-				materials.add(lightgray);
-			}
-
-			if (TinkerRegistry.getMaterial("graycloth") == Material.UNKNOWN && TDConfig.materials.gray) {
-				gray = new MaterialHelper("graycloth", 0x404040);
-				gray.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 7)));
-				materials.add(gray);
-			}
-
-			if (TinkerRegistry.getMaterial("pinkcloth") == Material.UNKNOWN && TDConfig.materials.pink) {
-				pink = new MaterialHelper("pinkcloth", 0xD08499);
-				pink.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 6)));
-				materials.add(pink);
-			}
-
-			if (TinkerRegistry.getMaterial("limecloth") == Material.UNKNOWN && TDConfig.materials.lime) {
-				lime = new MaterialHelper("limecloth", 0x41AE38);
-				lime.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 5)));
-				materials.add(lime);
-			}
-
-			if (TinkerRegistry.getMaterial("yellowcloth") == Material.UNKNOWN && TDConfig.materials.yellow) {
-				yellow = new MaterialHelper("yellowcloth", 0xB1A627);
-				yellow.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 4)));
-				materials.add(yellow);
-			}
-
-			if (TinkerRegistry.getMaterial("lightbluecloth") == Material.UNKNOWN && TDConfig.materials.lightblue) {
-				lightblue = new MaterialHelper("lightbluecloth", 0x6B8AC9);
-				lightblue.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 3)));
-				materials.add(lightblue);
-			}
-
-			if (TinkerRegistry.getMaterial("magentacloth") == Material.UNKNOWN && TDConfig.materials.magenta) {
-				magenta = new MaterialHelper("magentacloth", 0xB350BC);
-				magenta.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
-						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 2)));
-				materials.add(magenta);
+						new ItemStack(Blocks.WOOL, 1, 0)));
+				materials.add(white);
 			}
 
 			if (TinkerRegistry.getMaterial("orangecloth") == Material.UNKNOWN && TDConfig.materials.orange) {
@@ -221,12 +117,116 @@ public class TDMaterials {
 				materials.add(orange);
 			}
 
-			if (TinkerRegistry.getMaterial("whitecloth") == Material.UNKNOWN && TDConfig.materials.white) {
-				white = new MaterialHelper("whitecloth", 0xDDDDDD);
-				white.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+			if (TinkerRegistry.getMaterial("magentacloth") == Material.UNKNOWN && TDConfig.materials.magenta) {
+				magenta = new MaterialHelper("magentacloth", 0xB350BC);
+				magenta.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
 						new BowStringMaterialStats(1), null,
-						new ItemStack(Blocks.WOOL, 1, 0)));
-				materials.add(white);
+						new ItemStack(Blocks.WOOL, 1, 2)));
+				materials.add(magenta);
+			}
+
+			if (TinkerRegistry.getMaterial("lightbluecloth") == Material.UNKNOWN && TDConfig.materials.lightblue) {
+				lightblue = new MaterialHelper("lightbluecloth", 0x6B8AC9);
+				lightblue.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 3)));
+				materials.add(lightblue);
+			}
+
+			if (TinkerRegistry.getMaterial("yellowcloth") == Material.UNKNOWN && TDConfig.materials.yellow) {
+				yellow = new MaterialHelper("yellowcloth", 0xB1A627);
+				yellow.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 4)));
+				materials.add(yellow);
+			}
+
+			if (TinkerRegistry.getMaterial("limecloth") == Material.UNKNOWN && TDConfig.materials.lime) {
+				lime = new MaterialHelper("limecloth", 0x41AE38);
+				lime.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 5)));
+				materials.add(lime);
+			}
+
+			if (TinkerRegistry.getMaterial("pinkcloth") == Material.UNKNOWN && TDConfig.materials.pink) {
+				pink = new MaterialHelper("pinkcloth", 0xD08499);
+				pink.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 6)));
+				materials.add(pink);
+			}
+
+			if (TinkerRegistry.getMaterial("graycloth") == Material.UNKNOWN && TDConfig.materials.gray) {
+				gray = new MaterialHelper("graycloth", 0x404040);
+				gray.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 7)));
+				materials.add(gray);
+			}
+
+			if (TinkerRegistry.getMaterial("lightgraycloth") == Material.UNKNOWN && TDConfig.materials.lightgray) {
+				lightgray = new MaterialHelper("lightgraycloth", 0x9AA1A1);
+				lightgray.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 8)));
+				materials.add(lightgray);
+			}
+
+			if (TinkerRegistry.getMaterial("cyancloth") == Material.UNKNOWN && TDConfig.materials.cyan) {
+				cyan = new MaterialHelper("cyancloth", 0x2E6E89);
+				cyan.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 9)));
+				materials.add(cyan);
+			}
+
+			if (TinkerRegistry.getMaterial("purplecloth") == Material.UNKNOWN && TDConfig.materials.purple) {
+				purple = new MaterialHelper("purplecloth", 0x7E3DB5);
+				purple.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 10)));
+				materials.add(purple);
+			}
+
+			if (TinkerRegistry.getMaterial("bluecloth") == Material.UNKNOWN && TDConfig.materials.blue) {
+				blue = new MaterialHelper("bluecloth", 0x2E388D);
+				blue.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 11)));
+				materials.add(blue);
+			}
+
+			if (TinkerRegistry.getMaterial("browncloth") == Material.UNKNOWN && TDConfig.materials.brown) {
+				brown = new MaterialHelper("browncloth", 0x4F321F);
+				brown.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 12)));
+				materials.add(brown);
+			}
+
+			if (TinkerRegistry.getMaterial("greencloth") == Material.UNKNOWN && TDConfig.materials.green) {
+				green = new MaterialHelper("greencloth", 0x35461B);
+				green.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 13)));
+				materials.add(green);
+			}
+
+			if (TinkerRegistry.getMaterial("redcloth") == Material.UNKNOWN && TDConfig.materials.red) {
+				red = new MaterialHelper("redcloth", 0x963430);
+				red.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 14)));
+				materials.add(red);
+			}
+
+			if (TinkerRegistry.getMaterial("blackcloth") == Material.UNKNOWN && TDConfig.materials.black) {
+				black = new MaterialHelper("blackcloth", 0x191616);
+				black.addons.add(new CraftableFabricMaterial(new FabricMaterialStats(20, 0, 0, 100),
+						new BowStringMaterialStats(1), null,
+						new ItemStack(Blocks.WOOL, 1, 15)));
+				materials.add(black);
 			}
 		}
 
@@ -425,93 +425,9 @@ public class TDMaterials {
 
 	}
 
-//	public void registerItems(final RegistryEvent.Register<Item> event) {
-//		final IForgeRegistry registry = event.getRegistry();
-//
-//		for (Item i : itemList) {
-//			registry.register(i);
-//		}
-//	}
 
 	@Subscribe
 	public void init(FMLInitializationEvent event) {
-
-		// if (!TD_Config.materials.isBlacklisted("pureardite") &&
-		// !TD_Config.materials.isBlacklisted("purifiedgold"))
-		// TinkerRegistry.registerAlloy(new
-		// FluidStack(getMaterialHelper("pureardite").fluid, 1),
-		// new FluidStack(TinkerFluids.ardite, 1), new FluidStack(fluidDragonsBreath,
-		// 2),
-		// new FluidStack(TinkerFluids.blood, 2), new
-		// FluidStack(getMaterialHelper("purifiedgold").fluid, 2));
-		//
-		// if (!TD_Config.materials.isBlacklisted("purecobalt")
-		// &&!TD_Config.materials.isBlacklisted("purifiedsilver"))
-		// TinkerRegistry.registerAlloy(new
-		// FluidStack(getMaterialHelper("purecobalt").fluid, 1),
-		// new FluidStack(TinkerFluids.cobalt, 1), new FluidStack(fluidDragonsBreath,
-		// 2),
-		// new FluidStack(fluidSlush, 2), new
-		// FluidStack(getMaterialHelper("purifiedsilver").fluid, 2));
-		//
-		// if (!TD_Config.materials.isBlacklisted("puremanyullyn") &&
-		// !TD_Config.materials.isBlacklisted("purecobalt")
-		// && !TD_Config.materials.isBlacklisted("pureardite"))
-		// TinkerRegistry.registerAlloy(new
-		// FluidStack(getMaterialHelper("puremanyullyn").fluid, 2),
-		// new FluidStack(getMaterialHelper("pureardite").fluid, 1),
-		// new FluidStack(getMaterialHelper("purecobalt").fluid, 1));
-		//
-		// if (!TD_Config.materials.isBlacklisted("purifiedgold"))
-		// TinkerRegistry.registerAlloy(new
-		// FluidStack(getMaterialHelper("purifiedgold").fluid, 1),
-		// new FluidStack(TinkerFluids.gold, 1), new FluidStack(fluidQuartz, 8),
-		// new FluidStack(TinkerFluids.glass, 2), new
-		// FluidStack(TinkerFluids.purpleSlime, 2));
-		//
-		// if (!TD_Config.materials.isBlacklisted("purifiedsilver"))
-		// TinkerRegistry.registerAlloy(new
-		// FluidStack(getMaterialHelper("purifiedsilver").fluid, 1),
-		// new FluidStack(TinkerFluids.silver, 1), new FluidStack(fluidQuartz, 8),
-		// new FluidStack(TinkerFluids.glass, 2), new
-		// FluidStack(TinkerFluids.purpleSlime, 2));
-
-		// if (!TD_Config.materials.isBlacklisted("nihilite"))
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("solarium"), 1),
-		// new FluidStack(TinkerFluids.steel, 1), new FluidStack(fluids.get("sundrop"),
-		// 1));
-		//
-		// if (!TD_Config.materials.isBlacklisted("nihilite"))
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("dragonsteel"), 1),
-		// new FluidStack(TinkerFluids.steel, 1), new FluidStack(fluids.get("gallite"),
-		// 1));
-		//
-		// if (!TD_Config.materials.isBlacklisted("nihilite"))
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("blacksteel"), 1), new
-		// FluidStack(TinkerFluids.steel, 1),
-		// new FluidStack(fluids.get("voidite"), 1));
-		//
-		// if (!TD_Config.materials.isBlacklisted("nihilite"))
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("abyssalium"), 1),
-		// new FluidStack(fluids.get("voidite"), 1), new
-		// FluidStack(fluids.get("sundrop"), 1));
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("depthsilver"), 1),
-		// new FluidStack(TinkerFluids.silver, 1), new
-		// FluidStack(fluids.get("abyssalium"), 1));
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("moonsilver"), 1),
-		// new FluidStack(TinkerFluids.silver, 1), new FluidStack(fluids.get("voidite"),
-		// 1));
-		// TinkerRegistry.registerAlloy(new FluidStack(fluids.get("novagold"), 1), new
-		// FluidStack(TinkerFluids.gold, 1),
-		// new FluidStack(fluids.get("sundrop"), 1));
-
-//		if (TinkersDefence.bloodmagic)
-//			addonbloodmagic.init(event);
-
-//		for (MaterialHelper m : materials) {
-//			if (!TCConfig.materials.isBlacklisted(m.name))
-//				m.setupClient();
-//		}
 
 		for (MaterialHelper m : materials)
 			m.init();
@@ -568,10 +484,6 @@ public class TDMaterials {
 
 	@SubscribeEvent
 	public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-//		for (MaterialHelper m : materials) {
-//			if (!TCConfig.materials.isBlacklisted(m.name))
-//				m.setupRecipes(event);
-//		}
 	}
 
 	static FluidColored regFluid(String name, int color, RegistryEvent.Register<Block> event) {

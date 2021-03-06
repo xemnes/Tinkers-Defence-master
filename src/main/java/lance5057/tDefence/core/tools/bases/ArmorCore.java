@@ -20,8 +20,8 @@ import electroblob.wizardry.constants.Constants;
 import electroblob.wizardry.constants.Element;
 import electroblob.wizardry.event.SpellCastEvent;
 import electroblob.wizardry.item.ItemWizardArmour;
+import electroblob.wizardry.util.InventoryUtils;
 import electroblob.wizardry.util.SpellModifiers;
-import electroblob.wizardry.util.WizardryUtilities;
 import lance5057.tDefence.Reference;
 import lance5057.tDefence.core.addons.toolleveling.AddonToolLeveling;
 import lance5057.tDefence.core.library.ArmorNBT;
@@ -862,14 +862,14 @@ public abstract class ArmorCore extends ArmorBase implements IToolStationDisplay
 		// Armour cost reduction
 		if(event.getCaster() == null) return;
 		int armourPieces = getMatchingArmourCount(event.getCaster(), event.getSpell().getElement());
-		float multiplier = 1f - armourPieces * Constants.COST_REDUCTION_PER_ARMOUR;
-		if(armourPieces == WizardryUtilities.ARMOUR_SLOTS.length) multiplier -= Constants.FULL_ARMOUR_SET_BONUS;
+		float multiplier = 1f - armourPieces * 0.15F;
+		if(armourPieces == InventoryUtils.ARMOUR_SLOTS.length) multiplier -= 0.2F;
 		event.getModifiers().set(SpellModifiers.COST, event.getModifiers().get(SpellModifiers.COST) * multiplier, false);
 	}
 	
 	/** Counts the number of armour pieces the given entity is wearing that match the given element. */
 	public static int getMatchingArmourCount(EntityLivingBase entity, Element element){
-		return (int)Arrays.stream(WizardryUtilities.ARMOUR_SLOTS)
+		return (int)Arrays.stream(InventoryUtils.ARMOUR_SLOTS)
 				.map(s -> entity.getItemStackFromSlot(s).getItem())
 				.filter(i -> i instanceof ItemWizardArmour && ((ItemWizardArmour)i).element == element)
 				.count();

@@ -27,7 +27,7 @@ public class ModElementalFocus extends ModifierTDTrait {
 		if (element != event.getSpell().getElement())
 			return;
 		
-		float multiplier = 1f - Constants.COST_REDUCTION_PER_ARMOUR;
+		float multiplier = 1f - 0.2F;;
 		// if(armourPieces == WizardryUtilities.ARMOUR_SLOTS.length) multiplier -=
 		// Constants.FULL_ARMOUR_SET_BONUS;
 		event.getModifiers().set(SpellModifiers.COST, event.getModifiers().get(SpellModifiers.COST) * multiplier * ArmorTagUtil.getToolStats(tool).armorPotency,

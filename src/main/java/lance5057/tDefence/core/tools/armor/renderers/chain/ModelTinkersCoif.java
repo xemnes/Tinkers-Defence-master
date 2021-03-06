@@ -20,12 +20,12 @@ public class ModelTinkersCoif extends ArmorRenderer {
 		
 		this.Coif = new ModelRenderer(this, 0, 0);
 		this.Coif.setRotationPoint(0.0F, 0.0F, 0.0F);
-		this.Coif.addBox(-4.0F, -8.0F, -4.0F, 8, 10, 8, 0.5F);
+		this.Coif.addBox(-4.0F, -8.0F, -4.0F, 8, 10, 8, 0.8F);
 		
 		
 		this.Head = new ModelRenderer(this, 0, 18);
 		this.Head.setRotationPoint(0.0F, 0.0F, 0.0F);
-		this.Head.addBox(-4.0F, -8.0F, -4.0F, 8, 8, 8, 0.0F);
+		this.Head.addBox(-4.0F, -8.0F, -4.0F, 8, 8, 8, 0.51F);
 		
 		this.bipedHead = this.Head;
 		this.Head.addChild(Coif);
