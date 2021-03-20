@@ -8,9 +8,6 @@ import net.minecraft.util.text.TextFormatting;
 import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.client.CustomFontColor;
 import slimeknights.tconstruct.library.materials.AbstractMaterialStats;
-import slimeknights.tconstruct.library.materials.ExtraMaterialStats;
-import slimeknights.tconstruct.library.materials.HandleMaterialStats;
-import slimeknights.tconstruct.library.materials.HeadMaterialStats;
 
 public class ArmorMaterialStats extends AbstractMaterialStats {
 	public final static String LOC_Durability = "stat.armor.durability.name";

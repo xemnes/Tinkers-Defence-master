@@ -46,7 +46,7 @@ import scala.reflect.internal.Trees.Modifiers;
 		version = Reference.VERSION,
 		name = Reference.MOD_NAME,
 		dependencies = "required-after:tconstruct@[1.12-2.7.2.15,);" +
-						"required-after:conarm@[1.2.5.9-F,);")
+						"required-after:conarm@[1.2.5.9,);")
 public class TinkersDefence {
 
 	// public static int modGuiIndex = 0;

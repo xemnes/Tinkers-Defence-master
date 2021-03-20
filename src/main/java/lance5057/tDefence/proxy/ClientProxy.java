@@ -122,7 +122,7 @@ public class ClientProxy extends CommonProxy {
 			CustomArmorTextureCreator
 					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_cloth"));
 			CustomArmorTextureCreator
-					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_string"));
+					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_rivet"));
 		}
 
 		if (TinkersDefence.config.armor.enableHeavyArmor) {
@@ -338,7 +338,7 @@ public class ClientProxy extends CommonProxy {
 		if (TinkersDefence.config.shields.enableShields) {
 			if (TinkersDefence.config.shields.enableBuckler) {
 				roundshieldGUI.positions.clear();
-				roundshieldGUI.addSlotPosition(34, 15);
+				roundshieldGUI.addSlotPosition(24, 15);
 				roundshieldGUI.addSlotPosition(34, 33);
 				roundshieldGUI.addSlotPosition(34, 51);
 			}

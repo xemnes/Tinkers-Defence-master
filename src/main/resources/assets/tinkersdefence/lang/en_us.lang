@@ -851,6 +851,8 @@ tooltip.armor.defence=Armor Defence
 tooltip.armor.toughness=Armor Toughness
 tooltip.armor.potency=Magic Potency
 
+tooltip.armor.percentblocked=Percent Blocked
+
 
 stat.armor.durability.name=Durability
 stat.armor.durability.desc=Material's base durability.

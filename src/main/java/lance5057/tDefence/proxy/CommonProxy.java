@@ -4,6 +4,7 @@ import lance5057.tDefence.Reference;
 import lance5057.tDefence.TinkersDefence;
 import lance5057.tDefence.core.library.ArmorPart;
 import lance5057.tDefence.core.tools.bases.ArmorCore;
+import lance5057.tDefence.core.tools.bases.ShieldCore;
 import lance5057.tDefence.core.workstations.TDWorkstations;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
@@ -47,6 +48,10 @@ public class CommonProxy implements IGuiHandler {
 	}
 
 	public void registerToolModel(ToolCore tool) {
+
+	}
+
+	public void registerShieldModel(ShieldCore tool) {
 
 	}
 

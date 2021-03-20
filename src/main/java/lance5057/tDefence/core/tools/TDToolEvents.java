@@ -5,7 +5,7 @@ import java.util.UUID;
 import lance5057.tDefence.Reference;
 import lance5057.tDefence.core.materials.traits.AbstractTDTrait;
 import lance5057.tDefence.core.tools.bases.ArmorCore;
-import lance5057.tDefence.core.tools.bases.Shield;
+import lance5057.tDefence.core.tools.bases.ShieldCore;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -71,7 +71,7 @@ public class TDToolEvents {
 		if (event.getEntityLiving() instanceof EntityPlayer) {
 			EntityPlayer player = (EntityPlayer) event.getEntityLiving();
 			if (player.getActiveItemStack() != null && player.getActiveItemStack().getItem() != null
-					&& player.getActiveItemStack().getItem() instanceof Shield
+					&& player.getActiveItemStack().getItem() instanceof ShieldCore
 					&& !ToolHelper.isBroken(player.getActiveItemStack())) {
 				ItemStack shield = player.getActiveItemStack();
 

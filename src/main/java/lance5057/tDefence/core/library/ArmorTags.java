@@ -21,6 +21,9 @@ public final class ArmorTags {
 	public static final String ArmorToughness = "Toughness";
 	public static final String ArmorPotency = "Potency";
 
+	/** Shield **/
+	public static final String PercentBlocked = "PercentBlocked";
+
 	/** Helmet visor **/
 	public static final String Visor = "Visor";
 	public static final String VisorTime = "VisorTime";

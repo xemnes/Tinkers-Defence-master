@@ -26,6 +26,7 @@ import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import c4.conarm.common.ConstructsRegistry;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 
 public class TinkersChainboots extends ArmorCore {
 	public TinkersChainboots() {
@@ -40,7 +41,7 @@ public class TinkersChainboots extends ArmorCore {
 	@Override
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
 		if (this.isInCreativeTab(tab)) {
-			addDefaultSubItems(subItems, null, null, TDMaterials.white.mat, null);
+			addDefaultSubItems(subItems, TinkerMaterials.iron, TinkerMaterials.iron, TDMaterials.brown.mat, TinkerMaterials.iron);
 		}
 	}
 
@@ -50,7 +51,7 @@ public class TinkersChainboots extends ArmorCore {
 		NBTTagCompound base = new NBTTagCompound();
 
 		ResourceLocation rc = ArmorTextureBuilder.createArmorTexture("chainboots",
-				new String[] { "chain", "plate", "cloth", "string" }, materials, 32, 32);
+				new String[] { "chain", "plate", "cloth", "rivet" }, materials, 32, 32);
 
 		if (rc != null) {
 			base.setString(ArmorTags.TexLoc, rc.toString());
@@ -86,8 +87,8 @@ public class TinkersChainboots extends ArmorCore {
 		ExtraMaterialStats extra = materials.get(2).getStatsOrUnknown(MaterialTypes.EXTRA);
 		// start with head
 		data.head(this, head);
-		data.extra(extra);
 		data.handle(handle);
+		data.extra(extra);
 
 		data.modifiers = 5;
 
