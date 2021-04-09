@@ -77,14 +77,14 @@ public class ModelTinkersChausses extends ArmorRenderer {
 		this.BeltR = new ModelRenderer(this, 10, 0);
 		this.BeltR.mirror = true;
 		this.BeltR.setRotationPoint(0.0F, 0.0F, 0.0F);
-		this.BeltR.addBox(-12.2F, 10.5F, -3.0F, 12, 2, 6, 0.01F);
-		this.setRotateAngle(BeltR, 0.0F, -0.0F, -0.4363323129985824F);
+		this.BeltR.addBox(-11.0F, 9.5F, -3.0F, 12, 2, 6, 0.015F);
+		this.setRotateAngle(BeltR, 0.0F, -0.0F, -0.41F);
 		this.Belt.addChild(BeltR);
 
 		this.BeltL = new ModelRenderer(this, 10, 0);
 		this.BeltL.setRotationPoint(0.0F, 0.0F, 0.0F);
-		this.BeltL.addBox(0.2F, 10.5F, -3.0F, 12, 2, 6, 0.02F);
-		this.setRotateAngle(BeltL, 0.0F, -0.0F, 0.4363323129985824F);
+		this.BeltL.addBox(-1.0F, 9.5F, -3.0F, 12, 2, 6, 0.01F);
+		this.setRotateAngle(BeltL, 0.0F, -0.0F, 0.41F);
 		this.Belt.addChild(BeltL);
 
 		this.Front = new ModelRenderer(this, 0, 0);

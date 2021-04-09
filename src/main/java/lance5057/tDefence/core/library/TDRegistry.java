@@ -19,8 +19,7 @@ import slimeknights.tconstruct.library.tools.IToolPart;
 public class TDRegistry {
 	private static final Set<ArmorCore> armor = new TLinkedHashSet<>();
 	//private static final Set<IToolPart> armorParts = new TLinkedHashSet<>();
-	private static final Set<ArmorCore> armorStationCrafting = Sets.newLinkedHashSet();
-	private static final Set<ArmorCore> armorForgeCrafting = Sets.newLinkedHashSet();
+	private static final Set<ArmorCore> armorRefineryCrafting = Sets.newLinkedHashSet();
 	public static List<Pair<Item, ArmorPart>> armorPartPatterns = Lists.newLinkedList();
 
 	public static final Set<ArmorRenderer> finishingAnvilForms = new TLinkedHashSet<>();
@@ -40,26 +39,16 @@ public class TDRegistry {
 	 * armor Forges
 	 */
 	public static void registerArmorCrafting(ArmorCore armor) {
-		registerArmorStationCrafting(armor);
-		registerArmorForgeCrafting(armor);
+		registerArmorRefineryCrafting(armor);
 	}
 
 	/** Adds a armor to the Crafting UI of the armor Station */
-	public static void registerArmorStationCrafting(ArmorCore armor) {
-		armorStationCrafting.add(armor);
+	public static void registerArmorRefineryCrafting(ArmorCore armor) {
+		armorRefineryCrafting.add(armor);
 	}
 
-	public static ImmutableSet<ArmorCore> getArmorStationCrafting() {
-		return ImmutableSet.copyOf(armorStationCrafting);
-	}
-
-	/** Adds a armor to the Crafting UI of the armor Forge */
-	public static void registerArmorForgeCrafting(ArmorCore armor) {
-		armorForgeCrafting.add(armor);
-	}
-
-	public static ImmutableSet<ArmorCore> getArmorForgeCrafting() {
-		return ImmutableSet.copyOf(armorForgeCrafting);
+	public static ImmutableSet<ArmorCore> getArmorRefineryCrafting() {
+		return ImmutableSet.copyOf(armorRefineryCrafting);
 	}
 
 	public static Set<ArmorCore> getArmor() {

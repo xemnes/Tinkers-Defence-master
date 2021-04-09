@@ -70,7 +70,7 @@ public class TDCommands extends CommandBase implements ICommand {
 			// if(p_71515_2_[0].equals("reloadRenderers"))
 			// {
 			// p_71515_1_.addChatMessage(new TextComponentString(
-			// "§9[TDefense]§f - Reloading All Renderers..."));
+			// "ï¿½9[TDefense]ï¿½f - Reloading All Renderers..."));
 			// reloadModels();
 			// }
 			// else if(p_71515_2_[0].equals("toggleTransparency"))
@@ -79,12 +79,12 @@ public class TDCommands extends CommandBase implements ICommand {
 			// if(TinkersDefense.config.transparency)
 			// {
 			// p_71515_1_.addChatMessage(new TextComponentString(
-			// "§9[TDefense]§f - Transparency on."));
+			// "ï¿½9[TDefense]ï¿½f - Transparency on."));
 			// }
 			// else
 			// {
 			// p_71515_1_.addChatMessage(new TextComponentString(
-			// "§9[TDefense]§f - Transparency off."));
+			// "ï¿½9[TDefense]ï¿½f - Transparency off."));
 			// }
 			//
 			// }

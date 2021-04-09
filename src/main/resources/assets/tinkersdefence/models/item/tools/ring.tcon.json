@@ -1,8 +1,8 @@
 {
     "textures": {
-        "layer0": "tinkersdefence:items/baubles/ring/_band",
-        "layer1": "tinkersdefence:items/baubles/ring/_filigree",
-		"layer2": "tinkersdefence:items/baubles/ring/_setting",
-		"broken1": "tinkersdefence:items/baubles/ring/_broken"
+        "layer0": "tinkersdefence:items/baubles/ring/band",
+        "layer1": "tinkersdefence:items/baubles/ring/filigree",
+		"layer2": "tinkersdefence:items/baubles/ring/setting",
+		"broken1": "tinkersdefence:items/baubles/ring/broken"
     }
 }

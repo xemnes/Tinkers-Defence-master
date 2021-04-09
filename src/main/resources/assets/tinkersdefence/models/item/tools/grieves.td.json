@@ -1,9 +1,9 @@
 {
     "textures": {
-        "layer0": "tinkersdefence:items/armor/grieves/_plate",
-        "layer1": "tinkersdefence:items/armor/grieves/_trim",
-		"layer2": "tinkersdefence:items/armor/grieves/_chain",
-		"layer3": "tinkersdefence:items/armor/grieves/_cloth",
-		"broken1": "tinkersdefence:items/armor/grieves/_plate"
+        "layer0": "tinkersdefence:items/armor/grieves/plate",
+        "layer1": "tinkersdefence:items/armor/grieves/trim",
+		"layer2": "tinkersdefence:items/armor/grieves/chain",
+		"layer3": "tinkersdefence:items/armor/grieves/cloth",
+		"broken1": "tinkersdefence:items/armor/grieves/plate"
     }
 }

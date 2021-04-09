@@ -9,7 +9,7 @@ import lance5057.tDefence.Reference;
 import lance5057.tDefence.TinkersDefence;
 import lance5057.tDefence.core.library.TDRegistry;
 import lance5057.tDefence.core.library.TDUtils;
-import lance5057.tDefence.core.network.ArmorStationSelectionPacket;
+import lance5057.tDefence.core.network.ArmorRefinerySelectionPacket;
 import lance5057.tDefence.core.tools.armor.chain.TinkersChainboots;
 import lance5057.tDefence.core.tools.armor.chain.TinkersChausses;
 import lance5057.tDefence.core.tools.armor.chain.TinkersCoif;
@@ -23,8 +23,8 @@ import lance5057.tDefence.core.tools.basic.KiteShield;
 import lance5057.tDefence.core.tools.basic.RegDummy;
 import lance5057.tDefence.core.tools.basic.RoundShield;
 import lance5057.tDefence.core.tools.baubles.TinkerRing;
-import lance5057.tDefence.core.workstations.blocks.ArmorStationBlock;
-import lance5057.tDefence.core.workstations.tileentities.ArmorStationTile;
+import lance5057.tDefence.core.workstations.blocks.ArmorRefineryBlock;
+import lance5057.tDefence.core.workstations.tileentities.ArmorRefineryTile;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -51,7 +51,7 @@ public class TDTools {
 	public static final List<ArmorCore> armors = new ArrayList<>();
 	TDToolEvents events = new TDToolEvents();
 
-	public static ArmorStationBlock station;
+	public static ArmorRefineryBlock station;
 
 	public static ItemBlock stationItem;
 
@@ -145,10 +145,10 @@ public class TDTools {
 	public void registerBlocks(final RegistryEvent.Register<Block> event) {
 		IForgeRegistry<Block> registry = event.getRegistry();
 
-		station = new ArmorStationBlock();
+		station = new ArmorRefineryBlock();
 		registry.register(station);
 
-		GameRegistry.registerTileEntity(ArmorStationTile.class, TDUtils.getResource("armorstationtile"));
+		GameRegistry.registerTileEntity(ArmorRefineryTile.class, TDUtils.getResource("armorrefinerytile"));
 
 	}
 
@@ -175,7 +175,7 @@ public class TDTools {
 	@SideOnly(Side.CLIENT)
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		TinkersDefence.proxy.registerItemBlockRenderer(station, 0, "armorstation");
+		TinkersDefence.proxy.registerItemBlockRenderer(station, 0, "armorrefinery");
 	}
 
 	// INITIALIZATION
@@ -187,7 +187,7 @@ public class TDTools {
 
 		// proxy.init();
 
-		TinkerNetwork.instance.registerPacket(ArmorStationSelectionPacket.class);
+		TinkerNetwork.instance.registerPacket(ArmorRefinerySelectionPacket.class);
 	}
 
 	private void regToolBuilding() {

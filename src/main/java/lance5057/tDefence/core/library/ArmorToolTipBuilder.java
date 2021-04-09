@@ -5,6 +5,7 @@ import java.util.List;
 import com.google.common.collect.Lists;
 
 import lance5057.tDefence.core.materials.stats.ArmorMaterialStats;
+import lance5057.tDefence.core.materials.stats.ShieldMaterialStats;
 import lance5057.tDefence.util.ArmorTagUtil;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
@@ -18,6 +19,7 @@ import slimeknights.tconstruct.library.modifiers.IModifier;
 import slimeknights.tconstruct.library.modifiers.ModifierNBT;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.ToolHelper;
+import slimeknights.tconstruct.library.utils.TooltipBuilder;
 
 /**
  * Used for simple info buidling in the tools!

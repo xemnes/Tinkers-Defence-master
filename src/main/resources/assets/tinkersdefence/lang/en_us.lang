@@ -1,7 +1,8 @@
 itemGroup.tinkersdefence=Tinkers' Defence
 itemGroup.defencetextiles=Tinkers' Defence Textiles
-gui.armorstation.name=Armor Refinery
-tile.armorstation.name=Armor Refinery
+gui.armorrefinery.name=Armor Refinery
+gui.armorrefinery.preview=Preview
+tile.armorrefinery.name=Armor Refinery
 tile.finishinganvil.name=Finishing Anvil
 tile.hammeringtable.name=Hammering Table
 item.null.name=[null]

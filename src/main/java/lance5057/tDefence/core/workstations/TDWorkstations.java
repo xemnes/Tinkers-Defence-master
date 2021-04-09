@@ -1,9 +1,9 @@
 package lance5057.tDefence.core.workstations;
 
 import lance5057.tDefence.Reference;
-import lance5057.tDefence.core.workstations.gui.armorstation.ArmorStationContainer;
-import lance5057.tDefence.core.workstations.gui.armorstation.ArmorStationGui;
-import lance5057.tDefence.core.workstations.tileentities.ArmorStationTile;
+import lance5057.tDefence.core.workstations.gui.armorrefinery.ArmorRefineryContainer;
+import lance5057.tDefence.core.workstations.gui.armorrefinery.ArmorRefineryGui;
+import lance5057.tDefence.core.workstations.tileentities.ArmorRefineryTile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.util.math.BlockPos;
@@ -21,7 +21,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID)
 public class TDWorkstations {
 
-	public static final int ArmorStationID = 0;
+	public static final int ArmorRefineryID = 0;
 
 
 
@@ -50,8 +50,8 @@ public class TDWorkstations {
 		BlockPos pos = new BlockPos(x, y, z);
 
 		switch (ID) {
-			case ArmorStationID:
-				return new ArmorStationContainer(player.inventory, (ArmorStationTile) world.getTileEntity(pos));
+			case ArmorRefineryID:
+				return new ArmorRefineryContainer(player.inventory, (ArmorRefineryTile) world.getTileEntity(pos));
 		}
 		return null;
 	}
@@ -60,8 +60,8 @@ public class TDWorkstations {
 		BlockPos pos = new BlockPos(x, y, z);
 
 		switch (ID) {
-			case ArmorStationID:
-				return new ArmorStationGui(player.inventory, world, pos, (ArmorStationTile) world.getTileEntity(pos));
+			case ArmorRefineryID:
+				return new ArmorRefineryGui(player.inventory, world, pos, (ArmorRefineryTile) world.getTileEntity(pos));
 		}
 		return null;
 	}

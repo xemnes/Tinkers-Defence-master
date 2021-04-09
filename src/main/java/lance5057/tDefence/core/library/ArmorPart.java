@@ -11,6 +11,10 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
+import lance5057.tDefence.core.library.materialutilities.CraftableFabricMaterial;
+import lance5057.tDefence.core.materials.TDMaterials;
+import lance5057.tDefence.core.materials.stats.FabricMaterialStats;
+import lance5057.tDefence.core.parts.TDParts;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
@@ -29,6 +33,7 @@ import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.materials.IMaterialStats;
 import slimeknights.tconstruct.library.materials.Material;
+import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.tinkering.MaterialItem;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.IToolPart;
@@ -36,6 +41,7 @@ import slimeknights.tconstruct.library.tools.ToolCore;
 import slimeknights.tconstruct.library.traits.ITrait;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 
 public class ArmorPart extends MaterialItem implements IToolPart {
 
@@ -53,14 +59,18 @@ public class ArmorPart extends MaterialItem implements IToolPart {
 
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
-    if(this.isInCreativeTab(tab)) {
-      for(Material mat : TinkerRegistry.getAllMaterials()) {
+    if (this.isInCreativeTab(tab)) {
+      for (Material mat : TinkerRegistry.getAllMaterials()) {
         // check if the material makes sense for this item (is it usable to build stuff?)
-        if(canUseMaterial(mat)) {
-          subItems.add(getItemstackWithMaterial(mat));
-          if(!Config.listAllPartMaterials) {
+        if (canUseMaterial(mat)) {
+          if (mat.hasStats(FabricMaterialStats.TYPE)) {
+            subItems.add(getItemstackWithMaterial(TDMaterials.white.mat));
             break;
           }
+          subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
+                    if (!Config.listAllPartMaterials) {
+                        break;
+                    }
         }
       }
     }

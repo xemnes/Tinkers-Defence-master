@@ -23,7 +23,6 @@ import electroblob.wizardry.item.ItemWizardArmour;
 import electroblob.wizardry.util.InventoryUtils;
 import electroblob.wizardry.util.SpellModifiers;
 import lance5057.tDefence.Reference;
-import lance5057.tDefence.core.addons.toolleveling.AddonToolLeveling;
 import lance5057.tDefence.core.library.ArmorNBT;
 import lance5057.tDefence.core.library.ArmorTags;
 import lance5057.tDefence.core.library.ArmorToolTipBuilder;
@@ -838,9 +837,6 @@ public abstract class ArmorCore extends ArmorBase implements IToolStationDisplay
 
 		if (count > 1)
 			a.Toughness += count - 1;
-
-		if (player instanceof EntityPlayer)
-			AddonToolLeveling.xpAdder.addXp(armor, (int) (damage/4), (EntityPlayer) player);
 
 		return a;
 	}

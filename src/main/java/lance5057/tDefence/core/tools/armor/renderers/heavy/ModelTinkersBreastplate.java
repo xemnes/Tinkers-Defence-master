@@ -112,13 +112,13 @@ public class ModelTinkersBreastplate extends ArmorRenderer {
 
         this.gauntletLeft2 = new ModelRenderer(this, 78, 32);
         this.gauntletLeft2.setRotationPoint(0.0F, 7.50F, 0.0F);
-        this.gauntletLeft2.addBox(-1.5F, 0.3F, -2.5F, 4, 3, 5, -0.2F);
+        this.gauntletLeft2.addBox(-1.4F, -0.8F, -2.5F, 5, 4, 5, -0.2F);
         this.bipedLeftArm.addChild(gauntletLeft2);
 
         this.gauntletRight2 = new ModelRenderer(this, 78, 32);
         this.gauntletRight2.mirror = true;
         this.gauntletRight2.setRotationPoint(0.0F, 7.50F, 0.0F);
-        this.gauntletRight2.addBox(-2.5F, 0.3F, -2.5F, 4, 3, 5, -0.2F);
+        this.gauntletRight2.addBox(-3.6F, -0.8F, -2.5F, 5, 4, 5, -0.2F);
         this.bipedRightArm.addChild(gauntletRight2);
 
         VambraceL = new ModelRenderer(this, "Vambrace Left");

@@ -1,8 +1,8 @@
 {
     "textures": {
-        "layer0": "tinkersdefence:items/armor/coif/_chain",
-        "layer1": "tinkersdefence:items/armor/coif/_circlet",
-		"layer2": "tinkersdefence:items/armor/coif/_cloth",
-		"broken1": "tinkersdefence:items/armor/coif/_chain"
+        "layer0": "tinkersdefence:items/armor/coif/chain",
+        "layer1": "tinkersdefence:items/armor/coif/circlet",
+		"layer2": "tinkersdefence:items/armor/coif/cloth",
+		"broken1": "tinkersdefence:items/armor/coif/chain"
     }
 }

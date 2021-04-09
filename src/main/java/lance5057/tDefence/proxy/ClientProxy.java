@@ -122,7 +122,7 @@ public class ClientProxy extends CommonProxy {
 			CustomArmorTextureCreator
 					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_cloth"));
 			CustomArmorTextureCreator
-					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_string"));
+					.registerTexture(new ResourceLocation(Reference.MOD_ID, "armor/chainboots/_chainboots_rivet"));
 		}
 
 		if (TinkersDefence.config.armor.enableHeavyArmor) {
@@ -338,17 +338,17 @@ public class ClientProxy extends CommonProxy {
 		if (TinkersDefence.config.shields.enableShields) {
 			if (TinkersDefence.config.shields.enableBuckler) {
 				roundshieldGUI.positions.clear();
-				roundshieldGUI.addSlotPosition(34, 15);
-				roundshieldGUI.addSlotPosition(34, 33);
-				roundshieldGUI.addSlotPosition(34, 51);
+				roundshieldGUI.addSlotPosition(10, 25);
+				roundshieldGUI.addSlotPosition(39, 33);
+				roundshieldGUI.addSlotPosition(21, 51);
 			}
 
 			if (TinkersDefence.config.shields.enableKiteShield) {
 				kiteshieldGUI.positions.clear();
-				kiteshieldGUI.addSlotPosition(34, 15);
-				kiteshieldGUI.addSlotPosition(25, 33);
-				kiteshieldGUI.addSlotPosition(43, 33);
-				kiteshieldGUI.addSlotPosition(34, 51);
+				kiteshieldGUI.addSlotPosition(42, 60);
+				kiteshieldGUI.addSlotPosition(18, 40);
+				kiteshieldGUI.addSlotPosition(40, 40);
+				kiteshieldGUI.addSlotPosition(28, 19);
 			}
 		}
 
@@ -417,9 +417,9 @@ public class ClientProxy extends CommonProxy {
 		if (TinkersDefence.config.baubles.enableBaubles) {
 			if (TinkersDefence.config.baubles.enableRing) {
 				ringGUI.positions.clear();
-				ringGUI.addSlotPosition(34, 15);
-				ringGUI.addSlotPosition(34, 33);
-				ringGUI.addSlotPosition(34, 51);
+				ringGUI.addSlotPosition(24, 30);
+				ringGUI.addSlotPosition(44, 45);
+				ringGUI.addSlotPosition(20, 57);
 			}
 		}
 

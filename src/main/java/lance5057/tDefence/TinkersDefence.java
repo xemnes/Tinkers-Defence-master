@@ -9,11 +9,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.Logger;
 
-import lance5057.tDefence.core.addons.actuallyadditions.AddonActuallyAdditions;
-import lance5057.tDefence.core.addons.bloodmagic.AddonBloodMagic;
-import lance5057.tDefence.core.addons.botania.AddonBotania;
 import lance5057.tDefence.core.addons.ebwizardry.AddonEBWizardry;
-import lance5057.tDefence.core.addons.toolleveling.AddonToolLeveling;
 import lance5057.tDefence.core.events.TDEvents;
 import lance5057.tDefence.core.library.ModuleBase;
 import lance5057.tDefence.core.library.OutputWikiPages;
@@ -46,7 +42,7 @@ import scala.reflect.internal.Trees.Modifiers;
 		version = Reference.VERSION,
 		name = Reference.MOD_NAME,
 		dependencies = "required-after:tconstruct@[1.12-2.7.2.15,);" +
-						"required-after:conarm@[1.2.5.9-F,);")
+						"required-after:conarm@[1.2.5.9,);")
 public class TinkersDefence {
 
 	// public static int modGuiIndex = 0;
@@ -83,11 +79,7 @@ public class TinkersDefence {
 
 	public static List<ModuleBase> addons = new ArrayList<ModuleBase>();
 
-	public static AddonBloodMagic bloodmagic;
-	public static AddonBotania botania;
-	public static AddonToolLeveling leveling;
 	public static AddonEBWizardry wizardry;
-	public static AddonActuallyAdditions actadd;
 
 	@SidedProxy(clientSide = "lance5057.tDefence.proxy.ClientProxy", serverSide = "lance5057.tDefence.proxy.CommonProxy")
 	public static CommonProxy proxy;
@@ -111,16 +103,8 @@ public class TinkersDefence {
 
 		MinecraftForge.EVENT_BUS.register(mobs);
 
-		if (Loader.isModLoaded("bloodmagic") && TDConfig.addons.BloodMagic)
-			addons.add(bloodmagic = new AddonBloodMagic());
-		if (Loader.isModLoaded("botania") && TDConfig.addons.Botania)
-			addons.add(botania = new AddonBotania());
-		if (Loader.isModLoaded("tinkertoolleveling") && TDConfig.addons.ToolLeveling)
-			addons.add(leveling = new AddonToolLeveling());
 		if (Loader.isModLoaded("ebwizardry") && TDConfig.addons.EBWizardry)
 			addons.add(wizardry = new AddonEBWizardry());
-		// if (TCConfig.addons.ActuallyAdditions)
-		addons.add(actadd = new AddonActuallyAdditions());
 
 		for (ModuleBase m : addons) {
 			m.preInit(e);

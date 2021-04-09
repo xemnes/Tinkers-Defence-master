@@ -111,7 +111,7 @@ public class TraitNovel extends AbstractTDTrait {
 						player.sendMessage(new TextComponentString("It thrilled through him when he first felt the keel answer to his hand on the spokes and slide over the long hollows as the foresail scythed back and forth against the blue sky. "));
 					}
 					else if (rand == 21) {
-						player.sendMessage(new TextComponentString("It was one January morning, very early—a pinching, frosty morning—the cove all grey with hoar-frost, the ripple lapping softly on the stones, the sun still low and only touching the hilltops and shining far to seaward."));
+						player.sendMessage(new TextComponentString("It was one January morning, very earlyï¿½a pinching, frosty morningï¿½the cove all grey with hoar-frost, the ripple lapping softly on the stones, the sun still low and only touching the hilltops and shining far to seaward."));
 					}
 					else if (rand == 22) {
 						player.sendMessage(new TextComponentString("Long may it remain in this mixed world a point not easy of decision, which is the more beautiful evidence of the Almighty's goodness--the delicate fingers that are formed for sensitiveness and sympathy of touch, and made to minister to pain and grief, or the rough hard Captain Cuttle hand, that the heart teaches, guides, and softens in a moment!"));

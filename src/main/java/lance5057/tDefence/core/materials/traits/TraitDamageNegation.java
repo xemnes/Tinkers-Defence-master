@@ -26,19 +26,19 @@ public class TraitDamageNegation extends AbstractTDTrait {
 	}
 	
 	@Override
-	public void onDamagePre(ItemStack tool, LivingAttackEvent e) {
+	public void onDamagePre(ItemStack tool, LivingAttackEvent entity) {
 
 		if (damageTypes.size() > 0) {
-			for (DamageSource d : damageTypes) {
-				if (d == e.getSource() && e.getAmount() <= negate) {
-					ToolHelper.damageTool(tool, (int) e.getAmount(), e.getEntityLiving());
-					e.setCanceled(true);
+			for (DamageSource damage : damageTypes) {
+				if (damage == entity.getSource() && entity.getAmount() <= negate) {
+					ToolHelper.damageTool(tool, (int) entity.getAmount(), entity.getEntityLiving());
+					entity.setCanceled(true);
 				}
 			}
 		} else {
-			if (e.getAmount() <= negate) {
-				ToolHelper.damageTool(tool, (int) e.getAmount(), e.getEntityLiving());
-				e.setCanceled(true);
+			if (entity.getAmount() <= negate) {
+				ToolHelper.damageTool(tool, (int) entity.getAmount(), entity.getEntityLiving());
+				entity.setCanceled(true);
 			}
 		}
 	}
